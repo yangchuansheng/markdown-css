@@ -97,12 +97,23 @@ pre code /*代码块*/
      font-family: Consolas, Inconsolata, Courier, monospace;
       border-radius: 0px;
 }
-blockquote {
-    padding: 10px 20px;
-    margin: 0 0 20px;
-    font-size: 15px;
-    border-left: 5px solid #986dbd;
-    background-color: #f5f0fa;
+
+blockquote { /*引用块*/
+  display: block;
+  padding: 15px 1rem;
+  font-size: 0.9em;
+  padding-right: 15px;
+  margin: 1em 0;
+  color: rgba(47, 103, 141, 0.995) ;
+  border-left: 5px solid #986dbd;
+  background: #f5f0fa;
+  overflow: auto;
+  overflow-scrolling: touch; 
+  word-wrap: normal;
+  word-break: normal;  
+}
+blockquote p {
+    margin: 0px;
 }
 
 a { /*超链接*/
@@ -128,13 +139,6 @@ strong em/*强调的斜体*/
 font-weight: bold;
 }
 
-hr {  /*分隔线*/
-  height: 1px;
-  margin: 1.5rem 0px;
-  border: none;
-  border-top: 1px dashed #A5A5A5;
-}
-
 code /*行内代码*/
 {
     word-wrap: break-word;
@@ -143,6 +147,13 @@ code /*行内代码*/
     margin:0 2px;
     color:#ff006e;
     background:rgba(238, 238, 238, 0.8);
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #eee;
 }
 
 img
@@ -499,51 +510,4 @@ border-top-color: #9954bb;
 #small {
     font-size: .9em;
     color: #888;
-}
-
-/* notice */
-div.notices.note {
-    border-top: 30px solid #6bb1e0;
-    background: #e6f3fb;
-    color: rgba(47, 103, 141, 0.995) !important;
-}
-div.notices.info {
-    border-top: 30px solid #f1b37e;
-    background: #fefaf5;
-    color: rgba(150, 90, 38, 0.995) !important;
-}
-div.notices.tip {
-    border-top: 30px solid #84c578;
-    background: #e8f7e6;
-    color: rgba(72, 125, 63, 0.995) !important;
-}
-div.notices.warning {
-    border-top: 30px solid #d58181;
-    background: #fbeded;
-    color: rgba(132, 56, 56, 0.995) !important;
-}
-div.notices {
-    margin: 2rem 0;
-    position: relative;
-    border-radius: .2rem;
-    color: #fff;
-    padding: .5rem 1rem .5rem 2rem;
-    position: relative;
-}
-div.notices p:first-child:before {
-    position: absolute;
-    top: -27px;
-    color: #fff;
-    font-family: FontAwesome;
-    content: '';
-    left: 10px;
-}
-div.notices.note p:first-child:after {
-    content: 'Note';
-}
-div.notices p:first-child:after {
-    position: absolute;
-    top: -27px;
-    color: #fff;
-    left: 2.7rem;
 }
