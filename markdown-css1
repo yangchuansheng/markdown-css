@@ -1,10 +1,17 @@
+/*此样式是没任何效果的，留给你填写的
+你可以随意修改，组合你想要的css样式
+没有最好的，只有最合适的，
+看看后面的示例，你就会懂得写个你最爱的样式，并保存了的！
+建议先复制某一你喜欢的css模板样式到此样式下，再在此基础上自定义自己的css样式。
+ 来试试吧！   ^_^*/
+
 /*可任意修改样式，或恢复预设值，保存后生效
 相对“默认样式”而作的修改会用  红色 标注*/
 
 
 .output_wrapper/*此属性为全局*/
 {
-     font-size: 16px;
+     font-size: 15px;
      color: #3e3e3e;
      line-height: 1.6;
      word-spacing:0px; 
@@ -13,7 +20,7 @@
 }
 .output_wrapper *
 {
-  font-size: inherit  ;
+  font-size: 15px;
   color: inherit;
   line-height: inherit;
   margin:0px;
@@ -63,6 +70,7 @@ ul, ol {
 }
 ul{ /*无序列表*/
     list-style-type: disc;
+    font-size: 14px; 
 }
 ol { /*有序列表*/
   list-style-type: decimal;
@@ -510,4 +518,11 @@ border-top-color: #9954bb;
 #small {
     font-size: .9em;
     color: #888;
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
 }
