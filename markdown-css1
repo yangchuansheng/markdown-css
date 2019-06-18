@@ -1,13 +1,5 @@
-/*此样式是没任何效果的，留给你填写的
-你可以随意修改，组合你想要的css样式
-没有最好的，只有最合适的，
-看看后面的示例，你就会懂得写个你最爱的样式，并保存了的！
-建议先复制某一你喜欢的css模板样式到此样式下，再在此基础上自定义自己的css样式。
- 来试试吧！   ^_^*/
-
 /*可任意修改样式，或恢复预设值，保存后生效
 相对“默认样式”而作的修改会用  红色 标注*/
-
 
 .output_wrapper/*此属性为全局*/
 {
@@ -20,7 +12,7 @@
 }
 .output_wrapper *
 {
-  font-size: 15px;
+  font-size: inherit  ;
   color: inherit;
   line-height: inherit;
   margin:0px;
@@ -36,6 +28,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 h1 {
   font-size: 1.6em  ;
+ 
 }
 h2 {
     display: block;
@@ -65,12 +58,12 @@ h5 {
 h6 {
   font-size: 1em;
 }
+
 ul, ol {
   padding-left: 32px;
 }
 ul{ /*无序列表*/
     list-style-type: disc;
-    font-size: 14px; 
 }
 ol { /*有序列表*/
   list-style-type: decimal;
@@ -103,7 +96,7 @@ li{  /*在公众号下，改变不了li符号的属性（如颜色），并会�
 pre code /*代码块*/
 {           
      font-family: Consolas, Inconsolata, Courier, monospace;
-      border-radius: 0px;
+     border-radius: 0px;
 }
 
 blockquote { /*引用块*/
@@ -147,23 +140,22 @@ strong em/*强调的斜体*/
 font-weight: bold;
 }
 
+hr {  /*分隔线*/
+  height: 1px;
+  margin: 1.5rem 0px;
+  border: none;
+  border-top: 1px dashed #A5A5A5;
+}
+
 code /*行内代码*/
 {
     word-wrap: break-word;
     padding: 2px 4px;
     border-radius: 4px;
     margin:0 2px;
-    color:#ff006e;
-    background:rgba(238, 238, 238, 0.8);
+    color:#e96900;
+    background:#f8f8f8;
 }
-
-hr {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 0;
-    border-top: 1px solid #eee;
-}
-
 img
 {
   display: block;
@@ -179,6 +171,7 @@ figcaption/*图片描述文字*/
   color:#999;
   font-size: 0.7em;
 }
+
 
 /*================表格开始================*/
 table
@@ -199,12 +192,9 @@ table tr {
 }
 
 /*隔行改变行的背景色，如需要请打开*/
-/*
 table tr:nth-child(2n) {
   background-color: #F8F8F8;
 }
-*/
-
 table tr th, table tr td {
   font-size: 1em;
   border: 1px solid #CCC;
