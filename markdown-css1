@@ -141,10 +141,10 @@ font-weight: bold;
 }
 
 hr {  /*分隔线*/
-  height: 1px;
-  margin: 1.5rem 0px;
-  border: none;
-  border-top: 1px dashed #A5A5A5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #eee;
 }
 
 code /*行内代码*/
@@ -153,8 +153,9 @@ code /*行内代码*/
     padding: 2px 4px;
     border-radius: 4px;
     margin:0 2px;
-    color:#e96900;
-    background:#f8f8f8;
+    color: #ff006e;
+    /*background:#f8f8f8;*/
+    background:rgba(238, 238, 238, 0.8);
 }
 img
 {
